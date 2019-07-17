@@ -17,14 +17,39 @@ const router = new Router({
       name: 'Home',
       component: () => import(/* webpackChunkName: "about" */ '@/views/Home.vue'),
       children: [
+        // 用户列表
         {
           path: "/users",
           // 懒加载 组件 好处是 用的时候才去引入组件
+      
           component: () => import("@/components/Users.vue")
-        }, {
+       
+        },
+        // 角色列表
+         {
           path: "/roles",
           component: () => import("@/components/Roles.vue")
-        }]
+        },
+        // 权限列表
+        {
+          path: "/rights",
+          component: () => import("@/components/RightsList.vue")
+        },
+        // 商品列表
+        {
+          path: "/goods",
+          component: () => import("@/components/GoodsList.vue")
+         
+        },
+        // 添加商品
+        {
+          path: "/goodsAdd",
+          component: () => import("@/components/GoodsAdd.vue")
+         
+        }
+      
+
+      ]
     }, {
       path: "/Login",
       name: "Login",

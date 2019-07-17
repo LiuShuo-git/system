@@ -72,9 +72,9 @@ export default {
   methods: {
     async getmenusList() {
       const { data: res } = await this.$http.get("menus");
-      console.log(res);
+      // console.log(res);
       this.menuList=res.data;
-      console.log(this.menuList)
+      // console.log(this.menuList)
     },
     // 退出方法
     removeUser(){
@@ -91,6 +91,7 @@ export default {
 </script>
 
 <style lang="less" scoped>
+
 .el-header {
   background-color: #373d41;
   color: #fff;

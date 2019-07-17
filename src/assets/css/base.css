@@ -4,3 +4,15 @@ html,body {
    margin: 0;
    padding:0;
  }
+ .el-card,
+.el-table {
+  margin-top: 15px;
+}
+.el-table{
+  width: 99.9%;
+}
+
+.ql-editor {
+  min-height: 400px;
+}
+
