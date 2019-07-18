@@ -6,16 +6,21 @@ import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 // 引入富文本编辑器
 import VueQuillEditor from 'vue-quill-editor'
+// 引入 tree树形表格
+import tableTree from "vue-table-with-tree-grid";
+
+Vue.component("table-tree", tableTree);
+
 // 引入lodash
 // var _ = require('lodash');
 import _ from 'lodash';
- 
+
 // 富文本编辑器样式
 import 'quill/dist/quill.core.css'
 import 'quill/dist/quill.snow.css'
 import 'quill/dist/quill.bubble.css'
- 
-Vue.use(VueQuillEditor, /* { default global options } */)
+
+Vue.use(VueQuillEditor)
 Vue.config.productionTip = false;
 // 引入Element-Ui
 // 使用 ElementUI

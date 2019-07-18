@@ -52,6 +52,11 @@ const router = new Router({
           path: "/params",
           component: () => import("@/components/ParamsList.vue")
         },
+        // 商品分类
+        {
+          path: "/categories",
+          component: () => import("@/components/Categories.vue")
+        },
 
 
       ]
