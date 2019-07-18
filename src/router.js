@@ -21,12 +21,12 @@ const router = new Router({
         {
           path: "/users",
           // 懒加载 组件 好处是 用的时候才去引入组件
-      
+
           component: () => import("@/components/Users.vue")
-       
+
         },
         // 角色列表
-         {
+        {
           path: "/roles",
           component: () => import("@/components/Roles.vue")
         },
@@ -39,15 +39,20 @@ const router = new Router({
         {
           path: "/goods",
           component: () => import("@/components/GoodsList.vue")
-         
+
         },
         // 添加商品
         {
           path: "/goodsAdd",
           component: () => import("@/components/GoodsAdd.vue")
-         
-        }
-      
+
+        },
+        // 分类参数
+        {
+          path: "/params",
+          component: () => import("@/components/ParamsList.vue")
+        },
+
 
       ]
     }, {
