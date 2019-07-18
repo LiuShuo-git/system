@@ -57,6 +57,16 @@ const router = new Router({
           path: "/categories",
           component: () => import("@/components/Categories.vue")
         },
+        // 订单列表
+        {
+          path: "/orders",
+          component: () => import("@/components/OrdersList.vue")
+        },
+        // 数据报表
+        {
+          path: "/reports",
+          component: () => import("@/components/ReportsList.vue")
+        },
 
 
       ]
